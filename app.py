@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask.logging import create_logger
 import logging
 import traceback
-
+import os
 import pandas as pd
 # from sklearn.externals import joblib
 import joblib
@@ -78,4 +78,6 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Use Azure's PORT variable
+    app.run(host="0.0.0.0", port=port, debug=True)
+
