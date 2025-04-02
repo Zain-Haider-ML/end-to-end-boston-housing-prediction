@@ -1,18 +1,4 @@
-## 🎓 Pragmatic AI Labs | Join 1M+ ML Engineers
 
-### 🔥 Hot Course Offers:
-* 🤖 [Master GenAI Engineering](https://ds500.paiml.com/learn/course/0bbb5/) - Build Production AI Systems
-* 🦀 [Learn Professional Rust](https://ds500.paiml.com/learn/course/g6u1k/) - Industry-Grade Development
-* 📊 [AWS AI & Analytics](https://ds500.paiml.com/learn/course/31si1/) - Scale Your ML in Cloud
-* ⚡ [Production GenAI on AWS](https://ds500.paiml.com/learn/course/ehks1/) - Deploy at Enterprise Scale
-* 🛠️ [Rust DevOps Mastery](https://ds500.paiml.com/learn/course/ex8eu/) - Automate Everything
-
-### 🚀 Level Up Your Career:
-* 💼 [Production ML Program](https://paiml.com) - Complete MLOps & Cloud Mastery
-* 🎯 [Start Learning Now](https://ds500.paiml.com) - Fast-Track Your ML Career
-* 🏢 Trusted by Fortune 500 Teams
-
-Learn end-to-end ML engineering from industry veterans at [PAIML.COM](https://paiml.com)
 
 # flask-ml-azure-serverless
 Deploy Flask Machine Learning Application on Azure App Services
@@ -49,8 +35,6 @@ source ~/.flask-ml-azure/bin/activate
 ![1-launch-azure-shell](https://user-images.githubusercontent.com/58792/89555246-cc169e00-d7dd-11ea-8164-88caa1b8beba.png)
 
 3.  Create Github Repo with Azure Pipelines Enabled (Could be a fork of this repo)
-
-![2-create-Github-Repo](https://user-images.githubusercontent.com/58792/89555912-a3db6f00-d7de-11ea-9d2f-5ac030b43ec9.png)
 
 4. Clone the repo into Azure Cloud Shell
 
@@ -210,13 +194,6 @@ You can watch this [YouTube Walkthrough of this process](https://www.youtube.com
       displayName: 'Run lint tests'
 ```
 
-You can watch this [YouTube Walkthrough of this process](https://www.youtube.com/watch?v=TItOatTfAOc)
-
-
-### [Cloud Computing for Data Analysis Book](https://leanpub.com/cloud4data)
-This book is being written "just in time", with a weekly release schedule.
-
-![cloud4data books](https://d2sofvawe08yqg.cloudfront.net/cloud4data/hero2x?1578933644)
 
 
 
