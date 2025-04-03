@@ -27,7 +27,7 @@ locust==2.33.2
 MarkupSafe==3.0.2
 mccabe==0.7.0
 msgpack==1.1.0
-mypy-extensions==1.0.0
+# mypy-extensions==1.0.0
 numpy==2.2.3
 packaging==24.2
 pandas==2.2.3
