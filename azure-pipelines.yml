@@ -33,10 +33,11 @@ stages:
     pool: mypool
     steps:
 
-    - script: 
-        C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe --version
-        C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe install -r requirements.txt
-      displayName: 'Use Python $(pythonVersion)'
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '3.x'  # Use latest Python 3 version
+        addToPath: true
+
     
     - script: |
         python -m venv venv
