@@ -39,7 +39,7 @@ stages:
     
     - script: |
         C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe -m venv antenv
-        antenv\Scripts\activate
+        \antenv\Scripts\activate
         C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe -m pip install --upgrade pip
         C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe pip install -r requirements.txt
       workingDirectory: $(projectRoot)
