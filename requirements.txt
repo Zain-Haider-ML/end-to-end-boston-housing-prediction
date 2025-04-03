@@ -2,7 +2,7 @@ Flask==3.1.0
 flask-cors==5.0.1
 Flask-Login==0.6.3
 Jinja2==3.1.6
-joblib==1.4.2
+joblib
 numpy==2.2.3
 pandas==2.2.3
 pylint==3.3.5
