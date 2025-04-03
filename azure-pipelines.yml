@@ -34,8 +34,8 @@ stages:
     steps:
 
     - script: 
-        python --version
-        python install -r requirements.txt
+        C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe --version
+        C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe install -r requirements.txt
       displayName: 'Use Python $(pythonVersion)'
     
     - script: |
