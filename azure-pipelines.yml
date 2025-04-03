@@ -32,11 +32,9 @@ stages:
   - job: BuildJob
     pool: mypool
     steps:
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '3.x'
-        addToPath: True
-        architecture: x64
+    - script: 
+        echo "Using Python version from agent"
+        python --version
       displayName: 'Use Python $(pythonVersion)'
     
     - script: |
