@@ -38,15 +38,15 @@ stages:
       displayName: 'Use Python $(pythonVersion)'
     
     - script: |
-        python -m venv antenv
+        C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe -m venv antenv
         source antenv/bin/activate
-        python -m pip install --upgrade pip
-        # pip install setup
+        C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe -m pip install --upgrade pip
         pip install -r requirements.txt
       workingDirectory: $(projectRoot)
+      displayName: 'requirements downloading'
 
     - script: |
-        python -m venv antenv
+        C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe -m venv antenv
         source antenv/bin/activate
         make install
         make lint
