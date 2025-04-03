@@ -33,11 +33,9 @@ stages:
     pool: mypool
     steps:
 
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '3.x'  # Use latest Python 3 version
-        addToPath: true
-        installationPath: 'C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe'
+    - script: 
+        C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe -m pip install -r requirements.txt
+      displayName: 'Install dependencies using pre-installed Python'
 
     
     - script: |
