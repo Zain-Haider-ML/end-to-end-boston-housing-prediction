@@ -39,9 +39,9 @@ stages:
     
     - script: |
         C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe -m venv antenv
-        source antenv/bin/activate
+        antenv\Scripts\activate
         C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe -m pip install --upgrade pip
-        pip install -r requirements.txt
+        C:\Users\zain\AppData\Local\Programs\Python\Python313\python.exe pip install -r requirements.txt
       workingDirectory: $(projectRoot)
       displayName: 'requirements downloading'
 
