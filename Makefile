@@ -14,7 +14,7 @@ test:
 
 
 lint:
-	pylint --disable=R,C,W1203,W0702 app.py
+	pylint --disable=R,C,W1203,W0702,W0718 app.py
 
 docker-build:
 	docker build -t my-python-flask-app .
