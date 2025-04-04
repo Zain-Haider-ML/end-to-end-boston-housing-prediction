@@ -14,3 +14,7 @@ steps:
   - name: 'python'
     entrypoint: 'make'
     args: ['install', 'lint',]
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'gcloud'
+    args: ['app', 'deploy', '--quiet']
