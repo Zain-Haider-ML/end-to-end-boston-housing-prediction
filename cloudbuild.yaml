@@ -17,13 +17,11 @@ steps:
 
 # Build the image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/bostenappproject/my-repo/bostenapp/bostenapp-service:$COMMIT_SHA', '.']
-
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/bostenappproject-456015/my-repo/bostenappimage/bostenapp-service:$COMMIT_SHA', '.']
 # Push the image to Artifact Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-central1-docker.pkg.dev/bostenappproject/my-repo/bostenapp/bostenapp-service:$COMMIT_SHA'] 
-
-# Depcloy image to Cloud Run
+  args: ['push', 'us-central1-docker.pkg.dev/bostenappproject-456015/my-repo/bostenappimage/bostenapp-service:$COMMIT_SHA']
+# Deploy image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
   args: 
@@ -31,12 +29,8 @@ steps:
     - 'deploy'
     - 'bostenapp-service'
     - '--image'
-    - 'us-central1-docker.pkg.dev/bostenappproject/my-repo/bostenapp/bostenapp-service:$COMMIT_SHA'
+    - 'us-central1-docker.pkg.dev/bostenappproject-456015/my-repo/bostenappimage/bostenapp-service:$COMMIT_SHA'
     - '--region'
     - 'us-central1'
-    - '--platform'
-    - 'managed'
-    - '--allow-unauthenticated'
-
 images:
-  - 'us-central1-docker.pkg.dev/bostenappproject/my-repo/bostenapp/bostenapp-service:$COMMIT_SHA'
+- 'us-central1-docker.pkg.dev/bostenappproject-456015/my-repo/bostenappimage/bostenapp-service:$COMMIT_SHA'
