@@ -40,4 +40,3 @@ steps:
 
 images:
   - 'us-central1-docker.pkg.dev/bostenappproject/my-repo/bostenapp/bostenapp-service:$COMMIT_SHA'
-
